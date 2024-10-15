@@ -1,0 +1,85 @@
+.subscribe-button{
+  background-color: rgb(204, 0, 0);
+  color: white;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 18px;
+  padding-right: 18px;
+  /* Instead of height and width we are using an alternative named "padding"
+  It is same as margin but it provides spacing on the inside of the element.
+  THE MAIN REASON its a good alternative is that it doesn't allow the overflow of the extra texts 
+  Rather it is flexible and acquires the shape respectively. */
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 7px;
+  transition: opcaity 0.15s;
+  margin-left: 20px;
+  /*transition can apply on many different elements and properties 
+  like opaacity, changing color and so on...
+  The logical sense provides the evidence that transition should be put in general
+  button property instead of pseudo-class for the seamless transition.*/
+  vertical-align: top;
+  /* Vertical align places the line respectively in a correct based manner.
+  Browsers focuses on text-based alignment rather than element based. So sometimes the text can and element
+  can be placed at the different positions. We can make place at the same line using vertical align method*/
+}
+/* "hover" is actually a pseudo-class which provides conditional element style
+It only applies when we hover our mouse over it.
+"active" only happens when we click or tap on it */
+.subscribe-button:hover{
+  opacity: 0.8;
+}
+.subscribe-button:active{
+  opacity: 0.6;
+}
+.join-button{
+  background-color: white;
+  border-color: rgb(6, 95, 212);
+  border-style: solid;
+  border-width: 1px;
+  color: rgb(41, 118, 211);
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-right: 16px;
+  padding-left: 16px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 0.15s, color 0.15s;
+}
+.join-button:hover{
+  background-color: rgb(6, 95, 212);
+  color: white;
+}
+
+.join-button:active{
+  opacity: 0.7;
+}
+/* Here Border-style is applied to apply the same solid color all around it 
+Whenever a border have different shades use "solid" */
+.tweet-button{
+  background-color: rgb(29,158,255);
+  /* Two ways of color: rgb and hex */
+  color: white;
+  border: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 16px;
+  padding-left: 16px;
+  border-radius: 18px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  margin-left: 7px;
+  transition: box-shadow 0.15s;
+  vertical-align: top;
+}
+.tweet-button:hover{
+  /* box-shadow has 4 values; 1st : horizontal (right) shade
+  2nd: vertical (down) shade, 3rd: blur and 4th is color.
+  and for rgba its same as rgb but here "a" is an opacity factor which can 
+  modify the transparency of the shadow color. */
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+}
+/* To apply the perfectly rounded borders of a button use half px from the minimum of height or width
+Here height is smaller than width so we use 18 */

@@ -1,228 +1,72 @@
-<style>
-  .Uber-button{
-    background-color: black;
-    color: white;
-    height: 40px;
-    width: 110px;
-    border: none;
-    cursor: pointer;
-    transition: opacity 0.15s;
-  }
-  .Uber-button:hover{
-    opacity: 0.7;
-  }
-  .Amazon-button{
-    background-color:rgb(255,216,20);
-    color: black;
-    height: 37px;
-    width: 175px;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: background-color 0.15s;
-  }
-  .Amazon-button:hover{
-    background-color: rgb(243, 191, 24);
-  }
-  .Github-button{
-    background-color: rgb(46,164,79);
-    color: white;
-    height: 40px;
-    width: 95px;
-    border: none;
-    border-radius: 7px;
-    font-size: 14px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: box-shadow 0.15s;
-  }
-  .GitHub-button:hover{
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
-  }
-  .Get-Started-button{
-    background-color: rgb(121,82,179);
-    color: white;
-    height: 45px;
-    width: 140px;
-    border: none;
-    border-radius: 5px;
-    font-size: 15px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.15s;
-  }
-  .Get-Started-button:hover{
-    background-color: rgb(105, 69, 159);
-  }
-  .Download-button{
-    background-color: white;
-    color: rgb(108,117,125);
-    height: 45px;
-    width: 140px;
-    border-radius: 5px;
-    border-color: rgb(108,117,125);
-    border-style: solid;
-    border-width: 1.4px;
-    font-size: 15px;
-    font-weight: bold;
-    margin-left: 6px;
-    cursor: pointer;
-    transition: background-color 0.15s, color 0.15s;
-  }
-  .Download-button:hover{
-    background-color: rgb(108,117,125);
-    color: white;
-  }
-  .Link1-button{
-    color: white;
-    background-color: rgb(10,102,194);
-    height: 40px;
-    width: 220px;
-    border: none;
-    border-radius: 22px;
-    font-size: 14px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.15s;
-  }
-  .Link1-button:hover{
-    background-color: rgb(10, 77, 144);
-  }
-  .Save-button{
-    background-color: white;
-    color: rgb(41,118,221);
-    border-width: 1.3px;
-    height: 40px;
-    width: 82px;
-    border-style: solid;
-    border-color: rgb(41,118,221);
-    border-radius: 20px;
-    font-weight: bold;
-    font-size: 14px;
-    margin-left: 10px;
-    cursor: pointer;
-    transition: background-color 0.15s, border-width 0.1s;
-  }
-  .Save-button:hover{
-    background-color: rgb(146, 184, 234);
-    border-width: 2.2px;
-  }
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>2nd Exercise</title>
+    <link rel="stylesheet" href="Styles/2Ex.css">
+  </head>
+  <body>
+    <p>Uber</p>
+    <button class="Uber-button">
+      Request now
+    </button>
+    <br>
 
-  .link-color{
-    color: rgb(0,113,133);
-  }
-  .link-color:hover{
-    color: rgb(188, 44, 44);
-  }
-  .Article{
-    font-size: 30px;
-    font-weight: bold;
-  }
-  .PriceStock{
-    color: rgb(0,118,0);
-    font-size: 20px;
-    font-weight: bold;
-  }
-  .delivery-line{
-    font-size: 20px;
-    font-weight: bold;
-  }
-  .Cart-Button{
-    background-color: rgb(255,216,20);
-    border:none;
-    height: 38px;
-    width: 135px;
-    font-size: 15px;
-    border-radius: 19px;
-    cursor: pointer;
-    transition: opacity 0.15s, box-shadow 0.15s,
-    background-color 0.15s;
-  }
-  .Cart-button:hover{
-    background-color: rgb(241, 203, 12);
-  }
-  .Cart-button:active{
-    opacity: 0.6;
-    box-shadow: 2px 5px 2px rgba(0,0,0,0.15);
-  }
-  .Buy-button{
-    background: rgb(255,164,28);
-    height: 38px;
-    width: 135px;
-    border: none;
-    border-radius: 19px;
-    font-size: 15px;
-    margin-left: 10px;
-    cursor: pointer;
-    transition: opacity 0.15s, box-shadow 0.15s, 
-    background-color 0.15s;
-  }
-  .Buy-button:hover{
-    background-color: rgb(235, 146, 12);
-  }
-  .Buy-button:active{
-    opacity: 0.6;
-    box-shadow: 2px 5px 2px rgba(0,0,0,0.15);
-  }
-</style>
+    <p>Amazon</p>
+    <button class="Amazon-button">
+      Add to Cart
+    </button>
+    <br>
 
-<p>Uber</p>
-<button class="Uber-button">
-  Request now
-</button>
-<br>
+    <p>GitHub</p>
+    <button class="Github-button">
+      Sign up
+    </button>
+    <br>
 
-<p>Amazon</p>
-<button class="Amazon-button">
-  Add to Cart
-</button>
-<br>
+    <p>Bootstrap</p>
+    <button class="Get-Started-Button">
+      Get started
+    </button>
+    <button class="Download-button">
+      Download
+    </button>
 
-<p>GitHub</p>
-<button class="Github-button">
-  Sign up
-</button>
-<br>
-
-<p>Bootstrap</p>
-<button class="Get-Started-Button">
-  Get started
-</button>
-<button class="Download-button">
-  Download
-</button>
-
-<p>
-  Linkedin
-</p>
-<button class="Link1-button">
-  Apply on company website
-</button>
-<button class="Save-button">
-  Save
-</button>
-<br>
-<br>
+    <p>
+      Linkedin
+    </p>
+    <button class="Link1-button">
+      Apply on company website
+    </button>
+    <button class="Save-button">
+      Save
+    </button>
+    <br>
+    <br>
 
 
-<!--Challenge Exercise-->
-<a href="https://www.daraz.pk/#?" target="_blank" class="link-color">
-  Back to Daraz
-</a>
-<p class="Article">
-  Nike Black Running Shoes
-</p>
+    <!--Challenge Exercise-->
+    <a href="https://www.daraz.pk/#?" target="_blank" class="link-color">
+      Back to Daraz
+    </a>
+    <p class="Article">
+      Nike Black Running Shoes
+    </p>
 
-<p class="PriceStock">
-  $40 -in Stock.
-</p>
-<p class="delivery-line">
-  Free delivery tomorrow.
-</p>
+    <p class="PriceStock">
+      $40 -in Stock.
+    </p>
+    <p class="delivery-line">
+      Free delivery tomorrow.
+    </p>
 
-<button class="Cart-Button">
-  Add to Cart
-</button>
-<button class="Buy-button">
-  Buy now
-</button>
+    <button class="Cart-Button">
+      Add to Cart
+    </button>
+    <button class="Buy-button">
+      Buy now
+    </button>
+  </body>
+</html>
+
+
+
