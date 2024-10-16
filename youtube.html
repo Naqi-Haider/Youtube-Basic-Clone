@@ -15,16 +15,29 @@
         border-color: red;
         */
       }
-      
+      .search-bar{
+        display: block;
+      }
 
       .video-title{
         width: 300px;
+      }
+
+      .video-preview{
+        width: 300px;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 15px;;
       }
       
     </style>
   </head>
   <body>
+    <!--Div is useful because it can contain many different elements.
+      So, Div's are meant to be containers!-->
     <input class="search-bar" type="text" placeholder="Search"> <!--placeholder is just label for user to guide or info through-->
+    
+    <div class="video-preview">
     <img class="thumbnail" src="Thumbnails/thumbnail-1.webp">
     <p class="video-title">
       Talking Tech and AI with Google CEO Sundar Pichai!
@@ -35,5 +48,20 @@
     <p class="video-stats">
       3.4M views &#183; 6 months ago
     </p>
+    </div>
+
+    <div class="video-preview">
+      <img class="thumbnail" src="Thumbnails/thumbnail-2.webp">
+      <p class="video-title">
+        Try Not To Laugh Challenge #9
+      </p>
+      <p class="video-author">
+        Markiplier
+      </p>
+      <p class="video-stats">
+        19M views &#183; 4 years ago
+      </p>
+      </div>
+
   </body>
 </html>
