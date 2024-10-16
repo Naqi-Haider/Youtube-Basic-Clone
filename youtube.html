@@ -5,6 +5,7 @@
     <style>
       .thumbnail{
         width: 300px;
+        display: block;
         /*height: 300px;
         object-fit: contain; or cover makes the image fit in a desired aspect.
         object-position: right; it prioritizes the main focus point of image i.e top,bottom,left,right
@@ -14,14 +15,25 @@
         border-color: red;
         */
       }
-      .search-bar{
-        font-size: 20px;
-        margin-left: 12px;
+      
+
+      .video-title{
+        width: 300px;
       }
+      
     </style>
   </head>
   <body>
-    <img class="thumbnail" src="Thumbnails/thumbnail-1.webp">
     <input class="search-bar" type="text" placeholder="Search"> <!--placeholder is just label for user to guide or info through-->
+    <img class="thumbnail" src="Thumbnails/thumbnail-1.webp">
+    <p class="video-title">
+      Talking Tech and AI with Google CEO Sundar Pichai!
+    </p>
+    <p class="video-author">
+      Marques Brownlee
+    </p>
+    <p class="video-stats">
+      3.4M views &#183; 6 months ago
+    </p>
   </body>
 </html>
