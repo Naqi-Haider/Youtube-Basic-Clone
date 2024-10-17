@@ -1,0 +1,29 @@
+.header{
+  height: 55px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.left-section{
+  background-color: lightblue;
+  width: 150px;
+  margin-right: 70px;
+}
+/*Using flex because the middle section is stretching as we 
+  zoom in or out so it should be made flexible 
+  The other sections have rigid width and they are affected by
+  zoom feature*/
+.middle-section{
+  background-color: lightpink;
+  flex: 1;
+  margin-right: 35px;
+  max-width: 500px;
+}
+/* max-width: manages the streching out of middle section as we zoom out
+it gives threshold value that once it exceeds this limit the middle section will remain same*/
+.right-section{
+  background-color: lightblue;
+  width: 200px;
+}
