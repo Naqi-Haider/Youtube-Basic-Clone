@@ -28,23 +28,80 @@
         border-radius: 20px;
       }
       .profile-Tab{
-        height: 30px;
+        height: 70px;
+        width: 500px;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
       }
       .profile-left{
         width: 40px;
       }
       .pfp-icon{
         width: 70px;
+        border-radius: 35px;
       }
       .profile-middle{
-        flex: 1;
+        flex: 0.7;
+        margin-left: 30px;
+        padding: 8px 16px;
       }
       .profile-right{
-        width: 200px;
-        margin-right: 5px;
+        width: 70px;
+        background-color: white;
+        margin-right: 35px;
+      }
+      .follow{
+        padding: 11px 25px;
+        font-size: 16px;
+        color: white;
+        background-color: rgb(50, 77, 215);
+        border-radius: 7px;
+        border: none;
+      }
+      .pfp-name{
+        font-size: 18px;
+        font-weight: bold;
+      }
+      .pfp-category{
+        margin-top: 5px;
+        color: rgb(96,96,96);
+      }
+      .pfp-status{
+        color: rgb(96,96,96);
+      }
+      .home-design{
+        display: flex;
+        background-color: rgb(131, 72, 131);
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 700px;
+        padding: 20px 35px;
+        color: white;
+      }
+      .home{
+        font-size: 16px;
+      }
+      .home-search{
+        border: none;
+        border-radius: 18px;
+        padding: 6px 26px;
+        outline: none;
+        width: 400px;
+        height: 23px;
+      }
+      .home-download{
+        background-color:rgb(131, 72, 131);
+        padding: 8px 20px;
+        border-color: white;
+        color: white;
+        border-style: solid;
+        border-width: 0.5px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 4px;
       }
     </style>
   </head>
@@ -120,9 +177,46 @@
       <div class="profile-left">
         <img class="pfp-icon" src="luffy.jpeg">
       </div>
-      <div class="profile-middle"></div>
+      <div class="profile-middle">
+        <div class="pfp-name">Luffy</div>
+        <div class="pfp-category">Straw Hat</div>
+        <div class="pfp-status">Pirate King</div>
+      </div>
+      <div class="profile-right">
+        <button class="follow">Follow</button>
+      </div>
+    </div>
+    <div class="profile-Tab">
       <div class="profile-left">
-        <div class="follow">Follow</div>
+        <img class="pfp-icon" src="zoro.jpeg">
+      </div>
+      <div class="profile-middle">
+        <div class="pfp-name">Zoro</div>
+        <div class="pfp-category">Straw Hat</div>
+        <div class="pfp-status">Swordsman</div>
+      </div>
+      <div class="profile-right">
+        <button class="follow">Follow</button>
+      </div>
+    </div>
+    <div class="profile-Tab">
+      <div class="profile-left">
+        <img class="pfp-icon" src="sanji.jpeg">
+      </div>
+      <div class="profile-middle">
+        <div class="pfp-name">Sanji</div>
+        <div class="pfp-category">Straw Hat</div>
+        <div class="pfp-status">Chef</div>
+      </div>
+      <div class="profile-right">
+        <button class="follow">Follow</button>
+      </div>
+    </div>
+
+    <div class="home-design">
+      <div class="home">Home</div>
+      <input class="home-search" placeholder="Search">
+      <button class="home-download">Download</button>
       </div>
     </div>
   </body>
