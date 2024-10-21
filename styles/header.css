@@ -79,9 +79,44 @@
   cursor: pointer;
 }
 
+.search-button,
+.voice-search-button,
+.upload-icon-container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-button .tooltip,
+.voice-search-button .tooltip,
+.upload-icon-container .tooltip{
+  font-family: Roboto, Arial;
+  position: absolute;
+  background-color: grey;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  /*pointer-events is useful for removing the effect of hovering over tooltip.
+  We want the tooltip to remove its opacity only when we hover over the button 
+  not the tooltip itself. */
+  white-space: nowrap;
+  /* For large info tooltips we can just use nowrap to place it in a single line. */
+}
+
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.upload-icon-container:hover .tooltip{
+  opacity: 1;
+}
+
 .search-icon{
   height: 25px;
-  margin-top: 4px;
 }
 
 .voice-search-button{
@@ -95,7 +130,6 @@
 
 .voice-search-icon{
   height: 25px;
-  margin-top: 4px;
 }
 
 /* max-width: manages the streching out of middle section as we zoom out

@@ -11,5 +11,7 @@ body{
   padding-top: 80px;
   /* To make the sidebar not cover over the video<div>
   elements we apply padding ! */
-  padding-left: 80px;
+  padding-left: 96px;
+  padding-right: 24px;
+  background-color: rgb(248, 248, 248);
 }

@@ -7,4 +7,32 @@
   top: 55px;
   background-color: white;
   width: 72px;
+  z-index: 100;
+  padding-top: 5px;
+}
+
+.sidebar-link{
+  height: 74px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.sidebar-link:hover{
+  background-color: rgb(235, 235, 235);
+}
+
+/* Another way of choosing CSS selector is you can put space in em
+This is the best where you can target all images present only inside sidebar-link class <div> */
+.sidebar-link img{
+  height: 24px;
+  margin-bottom: 4px;
+}
+
+.sidebar-link div{
+  font-family: Roboto, Arial;
+  font-size: 10px;
+
 }
