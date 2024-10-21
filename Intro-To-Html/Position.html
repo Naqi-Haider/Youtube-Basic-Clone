@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Position Practice.
+    </title>
+  </head>
+  <!--Header element will not be covering the divs element below by changing
+  the margin or padding value of the body. Padding is much favourable.-->
+  <body style="
+    height: 3000px;
+    padding-top: 60px;
+  ">
+    <div style="
+      background-color: black;
+      color: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 50px;
+      ">header</div>
+      <!--To Make the space for the top sticky element for divs below
+      we can use margin-top value but the problem will be that attribute will
+      only be on that div element and you would have to change it for every div
+      to solve the case!-->
+    <div style="
+      background-color: lightblue;
+      height: 200px;
+      width: 200px;
+      position: static;
+      ">div1</div>
+    <div style="
+      background-color: lightpink;
+      height: 200px;
+      width: 200px;
+    ">div2</div>
+  </body>
+</html>

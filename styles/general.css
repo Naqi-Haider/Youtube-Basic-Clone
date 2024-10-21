@@ -6,4 +6,7 @@ p{
 
 body{
   margin: 0;
+  /* We use padding value to make the content 
+  more visible by pushing it down */
+  padding-top: 80px;
 }
