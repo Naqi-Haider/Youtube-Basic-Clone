@@ -13,6 +13,7 @@
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: rgb(240,240,240);
+  z-index: 100;
 }
 
 .left-section{
@@ -118,8 +119,24 @@ it gives threshold value that once it exceeds this limit the middle section will
   height: 24px;
 }
 
+.notifications-icon-container{
+  position: relative;
+}
+
 .notifications-icon{
   height: 24px;
+}
+
+.notifications-count{
+  position: absolute;
+  top: -2px;
+  right: -5px;
+  color: white;
+  background-color: rgb(200, 0, 0);
+  font-family: Roboto, Arial;
+  font-size: 11px;
+  padding: 2px 5px;
+  border-radius: 10px;
 }
 
 .current-user-picture{

@@ -13,6 +13,11 @@
     padding-top: 60px;
     padding-left: 80px;
   ">
+  <!--For z-index it means that elements placed below the position elements
+  would be overrided. To solve it, we can change the position of elements (order wise)
+  or Just use z-index. The z-index value decides that element will have a priority to override 
+  other placed elements. If its set to 1 (default is 0) then it will override
+  (absolute) or other elements placed below it-->
     <div style="
       background-color: black;
       color: white;
@@ -21,6 +26,7 @@
       left: 0;
       right: 0;
       height: 50px;
+      z-index: 1;
       ">header</div>
       <!--To Make the space for the top sticky element for divs below
       we can use margin-top value but the problem will be that attribute will
@@ -38,7 +44,28 @@
       top: 50px;
       width: 72px;
     ">
-      sidebar</div>
+      sidebar
+      <div style="
+      position: absolute;
+      background-color: red;
+      color: white;
+      top: 0px;
+      right: 0px;
+    ">
+      X
+    </div>
+
+    </div>
+
+    <div style="
+      position: absolute;
+      background-color: red;
+      color: white;
+      top: 60px;
+      right: 10px;
+    ">
+      absolute
+    </div>
       
     <div style="
       background-color: lightblue;
@@ -50,6 +77,19 @@
       background-color: lightpink;
       height: 200px;
       width: 200px;
-    ">div2</div>
+      position: relative;
+    ">div2
+
+    <div style="
+    position: absolute;
+    background-color: black;
+    color: white;
+    bottom: 10px;
+    right: 10px;
+    ">
+    5:00
+    </div>
+    
+  </div>
   </body>
 </html>
