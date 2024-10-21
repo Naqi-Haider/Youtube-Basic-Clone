@@ -1,0 +1,10 @@
+.sidebar{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  /* Top value is assigned on the basis of header height
+  which is 55px */
+  top: 55px;
+  background-color: white;
+  width: 72px;
+}

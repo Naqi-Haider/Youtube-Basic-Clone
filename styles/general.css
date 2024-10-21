@@ -9,4 +9,7 @@ body{
   /* We use padding value to make the content 
   more visible by pushing it down */
   padding-top: 80px;
+  /* To make the sidebar not cover over the video<div>
+  elements we apply padding ! */
+  padding-left: 80px;
 }
