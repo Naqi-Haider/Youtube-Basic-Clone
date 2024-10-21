@@ -1,0 +1,71 @@
+div{
+  font-family: Roboto, Arial;
+}
+.container{
+  width: 500px;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.picture-container{
+  margin-right: 10px;
+}
+.user-pfp{
+  width: 70px;
+  border-radius: 50%;
+  border: none;
+}
+.tweet-header{
+  display: flex;
+  flex-direction: row;
+  margin-top: 8px;
+}
+.profile-username{
+  font-size: 17px;
+  font-weight: bold;
+}
+.username{
+  margin-left: 4px;
+  font-size: 17px;
+  color: rgb(96,96,96);
+}
+.tweet-subject{
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-size: 17px;
+  line-height: 21px;
+}
+.video-overview{
+  background-color: grey;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 10px;
+  margin-top: 10px;
+  width: 400px;
+  /* If certain div elements are coming out of the flexbox just use overflow */
+  overflow: hidden;
+  cursor: pointer;
+}
+.user-tweet{
+  flex: 1;
+}
+.video-banner{
+  width: 150px;
+  height: 80px;
+}
+.video-link{
+  padding: 5px 12px;
+  background-color: white;
+}
+.site-name{
+  color: rgb(96,96,96);
+  font-size: 17px;
+  margin-bottom: 6px;
+  margin-top: 8px;
+}
+.link-description{
+  font-size: 17px;
+}

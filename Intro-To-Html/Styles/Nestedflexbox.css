@@ -1,0 +1,38 @@
+.n1{
+  background-color: rgb(240,240,240);
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+}
+.item1{
+  background-color: lightpink;
+  padding: 12px 30px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+}
+.item2{
+  background-color: lightblue;
+  padding: 12px 30px;
+  width: 200px;
+}
+.n2{
+  display: flex;
+  flex-direction: row;
+  margin-top: 12px;
+  height: 50px;
+  width: 400px;
+}
+.c1{
+  background-color: lightpink;
+  padding: 12px 30px;
+  width: 100px;
+}
+.c2{
+  background-color: lightblue;
+  width: 200px;
+}
+.row2{
+  display: flex;
+  justify-content: space-between;
+}

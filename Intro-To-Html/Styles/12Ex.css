@@ -1,0 +1,100 @@
+div{
+  font-family: Arial;
+}
+.container{
+  border-width: 1px;
+  border-color: rgb(200,200,200);
+  border-style: solid;
+  width: 300px;
+  border-radius: 10px;
+}
+.flexbox{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 8px 18px;
+}
+.notifications{
+  background-color: rgb(49,109,245);
+  color: white;
+  font-size: 16px;
+  border: none;
+  padding: 4px 14px;
+  border-radius: 20px;
+}
+.profile-Tab{
+  height: 70px;
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.profile-left{
+  width: 40px;
+}
+.pfp-icon{
+  width: 70px;
+  border-radius: 35px;
+}
+.profile-middle{
+  flex: 0.7;
+  margin-left: 30px;
+  padding: 8px 16px;
+}
+.profile-right{
+  width: 70px;
+  background-color: white;
+  margin-right: 35px;
+}
+.follow{
+  padding: 11px 25px;
+  font-size: 16px;
+  color: white;
+  background-color: rgb(50, 77, 215);
+  border-radius: 7px;
+  border: none;
+}
+.pfp-name{
+  font-size: 18px;
+  font-weight: bold;
+}
+.pfp-category{
+  margin-top: 5px;
+  color: rgb(96,96,96);
+}
+.pfp-status{
+  color: rgb(96,96,96);
+}
+.home-design{
+  display: flex;
+  background-color: rgb(131, 72, 131);
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 700px;
+  padding: 20px 35px;
+  color: white;
+}
+.home{
+  font-size: 16px;
+}
+.home-search{
+  border: none;
+  border-radius: 18px;
+  padding: 6px 26px;
+  outline: none;
+  width: 400px;
+  height: 23px;
+}
+.home-download{
+  background-color:rgb(131, 72, 131);
+  padding: 8px 20px;
+  border-color: white;
+  color: white;
+  border-style: solid;
+  border-width: 0.5px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
