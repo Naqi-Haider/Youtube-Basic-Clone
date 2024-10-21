@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sidebar practice.</title>
+  </head>
+  <!--We are giving height to scroll freely and make changes-->
+  <body style="
+  height: 3000px;
+  ">
+  
+  <div style="
+    background-color: green;
+    color: white;
+    width: 100px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    padding-right: 100px;
+  ">
+    right sidebar
+  </div>
+  <div style="
+    background-color: black;
+    color: white;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  ">bottom-right</div>
+  <!--
+  <div style="
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;"></div>
+    Makes the whole page black.
+  -->
+  <div style="
+    background-color: rgba(0,0,0,0.8);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  ">
+  <div style="
+    background-color: white;
+    width: 300px;
+    height: 120px;
+    border-radius: 10px;
+    padding: 15px 30px;">
+    <div style="
+    font-size: 30px;
+    font-family: Roboto, Arial;
+    font-weight: bold;
+    ">Modal Title</div>
+    <div style="
+    margin-top: 18px;
+    font-size: 18px;
+    font-family: Roboto, Arial;
+    ">
+      This is modal
+    </div>
+    <button style="margin-top: 15px;">close</button>
+  </div>
+  </div>
+  </body>
+</html>
