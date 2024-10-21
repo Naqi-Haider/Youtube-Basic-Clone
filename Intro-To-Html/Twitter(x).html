@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Twitter Design.
+    </title>
+    <style>
+      div{
+        font-family: Roboto, Arial;
+      }
+      .container{
+        width: 500px;
+        display: flex;
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+      .picture-container{
+        margin-right: 10px;
+      }
+      .user-pfp{
+        width: 70px;
+        border-radius: 50%;
+        border: none;
+      }
+      .tweet-header{
+        display: flex;
+        flex-direction: row;
+        margin-top: 8px;
+      }
+      .profile-username{
+        font-size: 17px;
+        font-weight: bold;
+      }
+      .username{
+        margin-left: 4px;
+        font-size: 17px;
+        color: rgb(96,96,96);
+      }
+      .tweet-subject{
+        margin-top: 5px;
+        margin-bottom: 20px;
+        font-size: 17px;
+        line-height: 21px;
+      }
+      .video-overview{
+        background-color: grey;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 10px;
+        margin-top: 10px;
+        width: 400px;
+        /* If certain div elements are coming out of the flexbox just use overflow */
+        overflow: hidden;
+        cursor: pointer;
+      }
+      .user-tweet{
+        flex: 1;
+      }
+      .video-banner{
+        width: 150px;
+        height: 80px;
+      }
+      .video-link{
+        padding: 5px 12px;
+        background-color: white;
+      }
+      .site-name{
+        color: rgb(96,96,96);
+        font-size: 17px;
+        margin-bottom: 6px;
+        margin-top: 8px;
+      }
+      .link-description{
+        font-size: 17px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="picture-container">
+        <img class="user-pfp" src="luffy.jpeg">
+      </div>
+      <div class="user-tweet">
+        <div class="tweet-header">
+          <div class="profile-username">
+            strawhatpirate.dev
+          </div>
+          <div class="username">
+            &#64;MonkeyDLuffy
+          </div>
+        </div>
+        <div class="tweet-subject">
+          What is backend web development? A complete overview. New video is up!
+        </div>
+        <div class="video-overview">
+          <div class="video-banner"></div>
+          <div class="video-link">
+            <div class="site-name">
+              youtube.com
+            </div>
+            <div class="link-description">
+              Backend web development -a complete overview (2021)
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
