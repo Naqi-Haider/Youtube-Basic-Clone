@@ -20,6 +20,18 @@
   margin-bottom: 10px;
 }
 
+@media (min-width: 1000px){
+  .video-title{
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .video-author,
+  .video-stats,
+  .video-time{
+    font-size: 14px;
+  }
+}
+
 .video-title-link{
   text-decoration: none;
   color: black;
@@ -56,11 +68,32 @@
   position: relative;
   margin-bottom: 9px;
 }
+/* Inheritance feature only works on text elements, related to font 
+text-decoration etc... the overall feature of child <div> remain the same */
 .video-grid{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 16px;
   row-gap: 40px;
+}
+/* To make the screen responsive and handles the layout we are 
+gonna use @media query */
+@media (max-width: 750px){
+  .video-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 751px) and (max-width: 999px){
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+  } 
+}
+
+@media (min-width: 1000px){
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 .video-time{
@@ -69,7 +102,6 @@
   position: absolute;
   bottom: 8px;
   right: 5px;
-  font-family: Roboto, Arial;
   font-size: 12px;
   font-weight: 500;
   padding: 4px 4px;

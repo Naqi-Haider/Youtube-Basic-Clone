@@ -1,10 +1,10 @@
 p{
-  font-family: Roboto, Arial;
   margin-top: 0;
   margin-bottom: 0;
 }
 
 body{
+  font-family: Roboto, Arial;
   margin: 0;
   /* We use padding value to make the content 
   more visible by pushing it down */
